@@ -1,24 +1,23 @@
-.game-area{
+.game-area {
   position: relative;
   margin: 50px auto;
   width: 450px;
   height: 450px;
   border: 2px solid black;
 }
-.snake{
+.snake {
   position: absolute;
   width: 8px;
   height: 8px;
-  background-color: green;
+  background-color: black;
   border: 1px solid white;
   z-index: 2;
-
 }
-.snake-food{
+.snake-food {
   position: absolute;
   width: 8px;
   height: 8px;
-  background-color: red  ;
+  background-color: red;
   border: 1px solid white;
   z-index: 1;
 }

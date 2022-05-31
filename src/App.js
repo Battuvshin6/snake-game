@@ -24,7 +24,7 @@ const initialState = {
 class App extends Component {
   state = initialState;
   componentDidMount() {
-    setInterval(this.moveSnake, this.state.speed);
+    setInterval(this.moveSnake, 200);
     document.onkeydown = this.onKeyDown;
   }
   componentDidUpdate() {
@@ -124,9 +124,15 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="game-area">
-        <Snake snakeDots={this.state.snakeDots} />
-        <Food dot={this.state.food} />
+      <div className="main">
+        <div className="margin-div">
+          <div className="div"></div>
+          <div className="game-area">
+            <Snake snakeDots={this.state.snakeDots} />
+            <Food dot={this.state.food} />
+          </div>
+          <div className="div"></div>
+        </div>
       </div>
     );
   }
